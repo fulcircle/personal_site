@@ -29,15 +29,12 @@
     <link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700">
     <link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
 
-    {{ $options := (dict "outputStyle" "compressed" "enableSourceMap" true "targetPath" "css/style.css") }}
-    {{ $sass := resources.Get "scss/style.scss" }}
-    {{ $style := resources.Get "scss/style.scss" | resources.ToCSS $options }}
+    {{ $style := resources.Get "scss/style.scss" | toCSS (dict "targetPath" "css/style.css") | postCSS | minify | fingerprint }}
 
     <link rel="stylesheet" href="{{ $style.Permalink }}" media="screen">
 
     {{ if .Site.Params.rtl}}
-      {{ $options := (dict "outputStyle" "compressed" "enableSourceMap" true "targetPath" "css/style-rtl.css") }}
-      {{ $style_rtl := resources.Get "scss/style-rtl.scss" | resources.ToCSS $options }}
+      {{ $style_rtl := resources.Get "scss/style-rtl.scss" | toCSS (dict "targetPath" "css/style-rtl.css") | postCSS | minify | fingerprint }}
       <link rel="stylesheet" href="{{ $style_rtl.Permalink }}" media="screen">
     {{ end }}
 
