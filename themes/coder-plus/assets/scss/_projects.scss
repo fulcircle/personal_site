@@ -1,0 +1,46 @@
+.projects__details {
+    @extend .details;
+
+    h1 {
+        font-size: 3.5rem;
+        line-height: 2.8rem;
+        color: $accent;
+        font-weight: 500;
+        margin: 0;
+    }
+
+    h2 {
+        @include section-h2;
+
+        a {
+            text-decoration: none;
+            all: unset;
+        }
+    }
+
+    h3 {
+        @include section-h3;
+
+        a {
+            text-decoration: none;
+        }
+    }
+}
+
+.projects-container {
+    @extend .section-container;
+    background-color: $bg-color;
+}
+
+.projects__section {
+    @extend .section;
+}
+
+
+.projects__row {
+    @extend .section-row;
+}
+
+.project__description-inner {
+    margin-left: 20%;
+}

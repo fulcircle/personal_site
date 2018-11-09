@@ -6,16 +6,23 @@
       {{ end }}
       <h1>{{ .Site.Params.author }}</h1>
       <h2 class="home__info">{{ .Site.Params.info }}</h2>
-      {{ with .Site.Params.social }}
       <ul>
-        {{ range sort .}}
-        <li><a href="{{ .url }}">{{ .name }}</a></li>
+        <li><a href="#resume">Résumé</a></li>
+        {{ if .Site.Params.showprojects }}
+        <li><a href="#projects">Projects</a></li>
         {{ end }}
       </ul>
-      {{ end }}
+    </div>
+    <div>
+      <div class="scroll-pointer"></div>
     </div>
   </section>
-  <section class="container--resume">
+  <section id="resume" class="resume-container">
     {{ partial "resume.html" .Site.Data.resume}}
   </section>
+  {{ if .Site.Params.showprojects }}
+  <section id="projects" class="projects-container">
+    {{ partial "projects.html" }}
+  </section>
+  {{ end }}
 </div>

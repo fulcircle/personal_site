@@ -66,7 +66,7 @@ date_to = "February 2012"
 description = "Designed, developed and implemented first automation framework for Palantir Finance’s backend testing using Python. Automated regression testing of the Palantir Configuration Server. Reduced manual regression testing from two days to several hours."
 
 [[education]]
-credential = "B.S., Computer Science"
+credential = "B.S. Computer Science"
 institution = "Columbia University"
 link = "https://www.columbia.edu"
 location = "New York, NY"
@@ -74,7 +74,7 @@ date_from = "2008"
 date_to = "2010"
 
 [[education]]
-credential = "M.S., Philosophy"
+credential = "M.S. Philosophy"
 institution = "London School of Economics"
 link = "https://www.lse.ac.uk"
 location = "New York, NY"
@@ -82,7 +82,7 @@ date_from = "2007"
 date_to = "2008"
 
 [[education]]
-credential = "B.A., Philosophy"
+credential = "B.A. Philosophy"
 institution = "Brown University"
 link = "https://www.brown.edu"
 location = "Providence, NY"

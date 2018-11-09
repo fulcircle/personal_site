@@ -2,10 +2,10 @@
     <div class="resume-section" style="flex: 1">
         <div class="resume-section__row">
             <div>
-                <h2 class="resume-section__title">Technologies</h2>
+                <h2>Technologies</h2>
             </div>
             <div>
-                <h3 class="resume-section__header">PROFICIENT</h3>
+                <h3>PROFICIENT</h3>
                 <ul class="resume-section__ul">
                     {{ range .technologies_proficient }}
                     <li>{{ . }}</li>
@@ -13,7 +13,7 @@
                 </ul>
             </div>
             <div>
-                <h3 class="resume-section__header">EXPERIENCE WITH</h3>
+                <h3>EXPERIENCE WITH</h3>
                 <ul class=resume-section__ul>
                     {{ range .technologies_experienced }}
                     <li>{{ . }}</li>
@@ -26,7 +26,7 @@
         {{ range $index, $val := $.work_experience }}
         <div class="resume-section__row">
             <div>
-                <h2 class="resume-section__title">
+                <h2>
                     {{ if not $index }}
                         Work Experience
                     {{ end }}
@@ -45,7 +45,7 @@
         {{ range $index, $val := $.education }}
         <div class="resume-section__row--education">
             <div>
-                <h2 class="resume-section__title">
+                <h2>
                     {{ if not $index }}
                         Education
                     {{ end }}

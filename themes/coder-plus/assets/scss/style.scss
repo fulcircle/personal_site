@@ -1,6 +1,8 @@
 @import "colors";
-@import "resume";
 @import "fonts";
+@import "base";
+@import "resume";
+@import "projects";
 @import "home_overrides";
 
 *,
@@ -183,12 +185,6 @@ img {
     width: 100%;
     padding-left: 2.0rem;
     padding-right: 2.0rem;
-}
-
-.container--resume {
-  @extend .container;
-  background-color: $bg-color-resume;
-  min-height: 100vh;
 }
 
 .navigation {
