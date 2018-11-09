@@ -7,123 +7,62 @@
             <div>
                 <h3 class="resume-section__header">PROFICIENT</h3>
                 <ul class="resume-section__ul">
-                    <li>Python / Django</li>
-                    <li>Javascript</li>
-                    <li>SCSS/CSS</li>
-                    <li>Responsive Design</li>
-                    <li>Test Automation / Selenium</li>
-                    <li>Angular 4</li>
-                    <li>Linux</li>
-                    <li>AWS</li>
-                    <li>SQL</li>
+                    {{ range .technologies_proficient }}
+                    <li>{{ . }}</li>
+                    {{ end }}
                 </ul>
             </div>
             <div>
                 <h3 class="resume-section__header">EXPERIENCE WITH</h3>
                 <ul class=resume-section__ul>
-                    <li>Rails</li>
-                    <li>React</li>
-                    <li>Flask</li>
-                    <li>Angularjs</li>
-                    <li>MongoDB</li>
+                    {{ range .technologies_experienced }}
+                    <li>{{ . }}</li>
+                    {{ end }}
                 </ul>
             </div>
         </div>
     </div>
     <div class="resume-section">
+        {{ range $index, $val := $.work_experience }}
         <div class="resume-section__row">
             <div>
-                <h2 class="resume-section__title">Work Experience</h2>
+                <h2 class="resume-section__title">
+                    {{ if not $index }}
+                        Work Experience
+                    {{ end }}
+                </h2>
             </div>
             <div style="flex: 2">
-                <h3 class="resume-section__position">Lead Developer</h3>
-                <p class="resume-section__company"><a target="_blank" href="https://www.willing.com">Willing</a>,
-                    Miami, FL, September 2016
-                    - April 2018</p>
-                <p class="resume-section__blurb">Reported directly to CEO. Planned, designed and led re-implementation
-                    of
-                    entire Willing.com app front-end in Angular 4.
-                    Transitioned entire Willing.com marketing site from Square platform to custom static site using
-                    Metalsmith static site generator.
-                    Designed, developed and implemented Python marketing analytics reporting platform.</p>
+                <h3 class="resume-section__position">{{ .role }}</h3>
+                <p class="resume-section__company"><a target="_blank" href="{{ .company_link }}">{{ .company }}</a>,
+                    {{ .location }}, {{ .date_from }} - {{ .date_to }}</p>
+                <p class="resume-section__blurb">{{ .description }}</p>
             </div>
         </div>
-        <div class="resume-section__row">
+        {{ end }}
+    </div>
+    <div class="resums-section">
+        {{ range $index, $val := $.education }}
+        <div class="resume-section__row--education">
             <div>
+                <h2 class="resume-section__title">
+                    {{ if not $index }}
+                        Education
+                    {{ end }}
+                </h2>
             </div>
             <div style="flex: 2">
-                <h3 class="resume-section__position">Senior Design Technologist</h3>
-                <p class="resume-section__company"><a target="_blank" href="https://www.doberman.co">Doberman Design</a>,
-                    New York,
-                    NY, April 2015
-                    - July 2016</p>
-                <p class="resume-section__blurb">Took client marketing page designs from mock-up to functioning site
-                    using
-                    Javascript, jQuery and SCSS.
-                    Maintained and updated Starbucks in-store wifi portal pages for 20,000 stores
-                    (Python/Django/Javascript).</p>
-            </div>
-        </div>
-        <div class="resume-section__row">
-            <div>
-            </div>
-            <div style="flex: 2">
-                <h3 class="resume-section__position">Software Engineer</h3>
-                <p class="resume-section__company"><a target="_blank" href="https://www.sailthru.com">Sailthru</a>,
-                    New York,
-                    NY, December 2013
-                    - December 2014</p>
-                <p class="resume-section__blurb">Responsible for rewroting Sailthru’s data access layer, which allowed
-                    Sailthru to scale its MongoDB database past 500 million documents. Developed a fast, efficient and
-                    parallelizable document update system in PHP to update 500 million Mongo documents as a
-                    prerequisite for rolling out new key features.</p>
-            </div>
-        </div>
-        <div class="resume-section__row">
-            <div>
-            </div>
-            <div style="flex: 2">
-                <h3 class="resume-section__position">Senior Automation Engineer</h3>
-                <p class="resume-section__company"><a target="_blank" href="https://www.zocdoc.com">ZocDoc</a>,
-                    New York,
-                    NY, April 2012
-                    - July 2013</p>
+                <h3 class="resume-section__position">{{ .credential }}</h3>
                 <p class="resume-section__blurb">
-                    Improved performance of massively parallel custom Selenium grid framework from running 200 tests
-                    every hour to 600 tests every ½ hour. Developed 150 automated tests using Selenum and C#.
+                    <a target="_blank" href="{{ .link }}">{{ .institution }}</a>,
+                    {{ .location }}, 
+                    {{ if .date_from }}
+                        {{ .date_from }} - 
+                    {{ end }}
+                    {{ .date_to }}
                 </p>
             </div>
         </div>
-        <div class="resums-section">
-            <div class="resume-section__row--education">
-                <div>
-                    <h2 class="resume-section__title">Education</h2>
-                </div>
-                <div style="flex: 2">
-                    <h3 class="resume-section__position">B.S., Computer Science</h3>
-                    <p class="resume-section__blurb"><a target="_blank" href="https://www.columbia.edu">Columbia
-                            University</a>,
-                        New York, NY, 2008 - 2010</p>
-                </div>
-            </div>
-            <div class="resume-section__row--education">
-                <div>
-                </div>
-                <div style="flex: 2">
-                    <h3 class="resume-section__position">M.S., Philosophy</h3>
-                    <p class="resume-section__blurb"><a target="_blank" href="https://lse.ac.uk">London School of
-                            Economics</a>,
-                        London, UK, 2007 - 2008</p>
-                </div>
-            </div>
-            <div class="resume-section__row--education">
-                <div>
-                </div>
-                <div style="flex: 2">
-                    <h3 class="resume-section__position">B.A., Philosophy</h3>
-                    <p class="resume-section__blurb"><a target="_blank" href="https://www.brown.edu">Brown University</a>,
-                        Providence, RI, 2006</p>
-                </div>
-            </div>
-        </div>
+        {{ end }}
     </div>
+</div>

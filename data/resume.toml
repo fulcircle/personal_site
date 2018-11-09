@@ -1,0 +1,90 @@
+technologies_proficient = [
+    "Python / Django",
+    "Javascript",
+    "SCSS / CSS",
+    "Responsive Design",
+    "Test Automation / Selenium",
+    "Angular 4",
+    "Linux",
+    "AWS",
+    "MongoDB",
+    "SQL"
+]
+
+technologies_experienced = [
+    "Rails",
+    "React",
+    "Flask",
+    "Angularjs",
+    "Java",
+    "C#"
+]
+
+[[work_experience]]
+role = "Lead Developer"
+company = "Willing"
+company_link = "https://www.willing.com"
+location = "Miami, FL"
+date_from = "September 2016"
+date_to = "April 2018"
+description = "Reported directly to CEO. Planned, designed and led re-implementation of entire Willing.com app front-end in Angular 4. Transitioned entire Willing.com marketing site from Square platform to custom static site. Designed, developed and implemented Python marketing analytics reporting platform."
+
+[[work_experience]]
+role = "Senior Design Technologist"
+company = "Doberman Design"
+company_link = "https://doberman.co"
+location = "New York, NY"
+date_from = "April 2015"
+date_to = "July 2016"
+description = "Took client marketing page designs from mock-up to functioning site using Javascript, jQuery and SCSS. Maintained and updated Starbucks in-store wifi portal pages for 20,000 stores (Python/Django/Javascript)."
+
+[[work_experience]]
+role = "Software Engineer"
+company = "Sailthru"
+company_link = "https://www.sailthru.com"
+location = "New York, NY"
+date_from = "December 2013"
+date_to = "December 2014"
+description = "Responsible for rewroting Sailthru’s data access layer, which allowed Sailthru to scale its MongoDB database past 500 million documents. Developed a fast, efficient and parallelizable document update system in PHP to update 500 million Mongo documents as a prerequisite for rolling out new key features."
+
+[[work_experience]]
+role = "Senior Automation Engineer"
+company = "ZocDoc"
+company_link = "https://www.zocdoc.com"
+location = "New York, NY"
+date_from = "April 2012"
+date_to = "July 2013"
+description = "Improved performance of massively parallel custom Selenium grid framework from running 200 tests every hour to 600 tests every ½ hour. Developed 150 automated tests using Selenum and C#."
+
+[[work_experience]]
+role = "Backend QA Engineer"
+company = "Palantir Technologies"
+company_link = "https://www.palantir.com"
+location = "Palo Alto, CA"
+date_from = "May 2011"
+date_to = "February 2012"
+description = "Designed, developed and implemented first automation framework for Palantir Finance’s backend testing using Python. Automated regression testing of the Palantir Configuration Server. Reduced manual regression testing from two days to several hours."
+
+[[education]]
+credential = "B.S., Computer Science"
+institution = "Columbia University"
+link = "https://www.columbia.edu"
+location = "New York, NY"
+date_from = "2008"
+date_to = "2010"
+
+[[education]]
+credential = "M.S., Philosophy"
+institution = "London School of Economics"
+link = "https://lse.ace.uk"
+location = "New York, NY"
+date_from = "2007"
+date_to = "2008"
+
+[[education]]
+credential = "B.A., Philosophy"
+institution = "Brown University"
+link = "https://www.brown.edu"
+location = "Providence, NY"
+date_from = ""
+date_to = "2006"
