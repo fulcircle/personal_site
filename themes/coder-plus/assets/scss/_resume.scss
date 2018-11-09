@@ -1,11 +1,107 @@
+h2.resume-section__title {
+    margin: 0;
+    font-size: 26px;
+    font-weight: 300;
+    text-transform: none;
+}
+
+h3.resume-section__header {
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: .1em;
+    line-height: 1.6em;
+    margin: 0;
+}
+
+h3.resume-section__position {
+    @extend h3.resume-section__header;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.resume-section__company {
+    font-size: 15px;
+    font-style: normal;
+    transition: none;
+    font-weight: 400;
+
+    a {
+        font-size: 18px;
+        font-weight: 500;
+        text-decoration: none;
+        &:before, &:after {
+            all: unset;
+        }
+    }
+}
+
+.resume-section__blurb {
+    line-height: 28px;
+}
+
 .resume-details {
     display: flex;
-    background-color:gray;
-    padding: 50px 10vw 50px 10vw;
+    flex-direction: column;
+    padding: 96px 60px 25px 60px;
+    max-width: 1280px;
+    margin: 0 auto;
+
+    a:hover, a:visited {
+        color: inherit;
+    }
+
+    a, a:hover {
+        text-decoration: underline;
+        text-underline-position: under;
+        transition: none;
+        &:before, &:after {
+            all: unset;
+        }
+    }
 }
 
 .resume-section {
     display: flex;
+    flex-direction: column;
     justify-content: flex-start;
-    
+    margin-bottom: 60px;
+    div {
+        flex: 1;
+    }
+}
+
+.resume-section__row {
+    @extend .resume-section;
+    flex-direction: row;
+}
+
+.resume-section__row--education {
+    @extend .resume-section__row;
+    margin-bottom: 10px;
+
+    .resume-section__position {
+        margin-bottom: 0;
+    }
+
+    p {
+        margin-top: 10px;
+    }
+
+    div {
+        margin-bottom: 20px;
+    }
+}
+
+ul.resume-section__ul {
+    padding-inline-start: 25px;
+    li {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        height: 28px;
+        letter-spacing: normal;
+        line-height: 28.8px;
+        list-style-type: disc;
+        overflow-wrap: break-word;
+    }
 }

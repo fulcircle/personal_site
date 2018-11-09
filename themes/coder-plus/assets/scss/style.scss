@@ -1,6 +1,7 @@
-@import "colors.scss";
-@import "resume.scss";
-@import "fonts.scss";
+@import "colors";
+@import "resume";
+@import "fonts";
+@import "home_overrides";
 
 *,
 *:after,
@@ -17,7 +18,7 @@ body {
     display: flex;
     color: $fg-color;
     background-color: $bg-color;
-    font-family: 'LatoWeb', 'Fira Mono', monospace;
+    font-family: 'ProximaNova', monospace;
     font-size: 1.6em;
     font-weight: 400;
     letter-spacing: 0.0625em;
@@ -76,6 +77,7 @@ h1 {
 h2 {
     font-size: 2.8rem;
     line-height: 2.8rem;
+    color: $accent;
     @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
         font-size: 2.4rem;
         line-height: 2.4rem;
@@ -388,9 +390,9 @@ img {
         h2 {
             margin-top: 1.0rem;
             margin-bottom: 0.5rem;
-            font-size: 2.4rem;
+            font-size: 2.0rem;
             @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-                font-size: 2.0rem;
+                font-size: 1.75rem;
             }
         }
         ul {
@@ -466,7 +468,7 @@ a:after {
     display: inline-block;
     width: 0;
     height: 2px;
-    background: #F30034;
+    background: $accent;
     transition: 0.5s;
 }
 
