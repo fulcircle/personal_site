@@ -52,3 +52,7 @@ disqusShortname = "yourdiscussshortname" # Enable or disable Disqus.
     name = "Posts"
     weight = 1
     url  = "posts"
+
+[blackfriday]
+  plainIDAnchors = true
+  hrefTargetBlank = true

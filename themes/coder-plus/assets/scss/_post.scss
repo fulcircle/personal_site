@@ -21,8 +21,22 @@ article p {
             font-size:15px;
         }
     }
+
+}
+
+.content article {
+    h5 {
+        margin-top: 60px;
+    }
 }
 
 .container.list {
     @extend .details;
+    align-items: center;
+}
+
+.centered-image {
+    width: 300px;
+    height: auto;
+    margin: 35px auto;
 }
