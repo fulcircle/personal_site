@@ -2,11 +2,13 @@
     @extend .details;
 
     h1 {
-        font-size: 3.5rem;
-        line-height: 2.8rem;
-        color: $accent;
-        font-weight: 500;
-        margin: 0;
+            font-size: 42px;
+            line-height: 2.8rem;
+            color: $accent;
+            font-weight: 300;
+            margin: 0;
+            letter-spacing: 6px;
+            text-transform: none;
     }
 
     h2 {

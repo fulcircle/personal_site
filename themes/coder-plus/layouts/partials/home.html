@@ -6,15 +6,25 @@
       {{ end }}
       <h1>{{ .Site.Params.author }}</h1>
       <h2 class="home__info">{{ .Site.Params.info }}</h2>
-      <ul>
-        <li><a href="#resume">Résumé</a></li>
-        {{ if .Site.Params.showprojects }}
-        <li><a href="#projects">Projects</a></li>
-        {{ end }}
-      </ul>
+      <div class="home-social-row">
+        <div>
+          <a target="_blank" href="https://www.github.com/fulcircle">
+            <div class="github-icon" style="margin-right:20px;"></div>
+          </a>
+        </div>
+        <div>
+          <a target="_blank" href="https://www.linkedin.com/in/vikram-sunkavalli-1417762a/">
+            <div class="linkedin-icon"></div>
+          </a>
+        </div>
+      </div>
     </div>
-    <div>
-      <div class="scroll-pointer"></div>
+    <div class="home-bottom-row">
+      <div><a href="#resume">Résumé</a></div>
+      {{ if .Site.Params.showprojects }}
+      <div><a href="#projects">Projects</a></div>
+      {{ end }}
+      <div><a href="/posts">Posts</a></div>
     </div>
   </section>
   <section id="resume" class="resume-container">
