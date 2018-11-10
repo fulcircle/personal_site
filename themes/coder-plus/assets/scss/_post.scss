@@ -1,0 +1,28 @@
+.container.post {
+    @extend .details;
+    max-width: 650px;
+
+    h1 {
+        line-height: 40px;
+    }
+}
+
+article p {
+    font-size: 18px;
+    line-height: 28px;
+    margin: 35px 0;
+
+}
+
+.content article header {
+
+    h2 {
+        &.date {
+            font-size:15px;
+        }
+    }
+}
+
+.container.list {
+    @extend .details;
+}
