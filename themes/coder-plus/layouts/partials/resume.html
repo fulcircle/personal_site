@@ -25,17 +25,21 @@
     <div class="resume-section">
         {{ range $index, $val := $.work_experience }}
         <div class="resume-section__row">
+                {{ if not $index }}
             <div>
                 <h2>
-                    {{ if not $index }}
-                        Work Experience
-                    {{ end }}
+                    Work Experience
                 </h2>
             </div>
+                {{ else }}
+                <div class="hide-small"></div>
+                {{ end }}
             <div style="flex: 2">
                 <h3 class="resume-section__position">{{ .role }}</h3>
-                <p class="resume-section__company"><a target="_blank" href="{{ .company_link }}">{{ .company }}</a>,
-                    {{ .location }}, {{ .date_from }} - {{ .date_to }}</p>
+                <div class="resume-section__company"><a target="_blank" href="{{ .company_link }}">{{ .company }}</a>
+                    <div style="margin-bottom: 8px" class="show-mobile"></div>
+                    <div style="line-height: 26px">{{ .location }}, {{ .date_from }} - {{ .date_to }}</div>
+                </div>
                 <p class="resume-section__blurb">{{ .description }}</p>
             </div>
         </div>
@@ -54,10 +58,11 @@
             <div style="flex: 2">
                 <h3 class="resume-section__position">{{ .credential }}</h3>
                 <p class="resume-section__blurb">
-                    <a target="_blank" href="{{ .link }}">{{ .institution }}</a>,
-                    {{ .location }}, 
+                    <a target="_blank" href="{{ .link }}">{{ .institution }}</a>
+                    <br class="show-mobile"/>
+                    {{ .location }},
                     {{ if .date_from }}
-                        {{ .date_from }} - 
+                        {{ .date_from }} -
                     {{ end }}
                     {{ .date_to }}
                 </p>

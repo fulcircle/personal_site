@@ -1,9 +1,33 @@
+@mixin mobile {
+    @media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
+        @content
+    }
+}
+
+.hide-mobile {
+    @include mobile {
+        display: none;
+    }
+}
+
+.show-mobile {
+    display: none;
+
+    @include mobile {
+        display: inherit;
+    }
+}
+
 .details {
     display: flex;
     flex-direction: column;
     padding: 96px 60px 25px 60px;
     max-width: 1280px;
     margin: 0 auto;
+
+    @include mobile {
+        padding: 96px 30px 25px 30px;
+    }
 
     a:hover, a:visited {
         color: inherit;

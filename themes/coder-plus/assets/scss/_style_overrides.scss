@@ -44,6 +44,13 @@ h2.home__info {
         font-weight: 400;
     }
 
+    @include mobile {
+        width: inherit;
+        height: 250px;
+        flex-direction: column;
+        text-align: center;
+    }
+
 }
 
 .home-social-row {
@@ -55,4 +62,12 @@ h2.home__info {
 .home-spacer {
     @extend .spacer;
     margin: 40px 0 30px;
+}
+
+.container {
+    min-width: 960px;
+
+    @include mobile {
+        min-width: inherit;
+    }
 }

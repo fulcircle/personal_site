@@ -3,14 +3,17 @@
     font-style: normal;
     transition: none;
     font-weight: 400;
-
     a {
         font-size: 18px;
         font-weight: 400;
         text-decoration: underline;
-        &:before, &:after {
+        &:before,
+        &:after {
             all: unset;
         }
+    }
+    @include mobile {
+        margin-bottom: 8px;
     }
 }
 
@@ -20,14 +23,11 @@
 
 .resume-details {
     @extend .details;
-
     h2 {
         @include section-h2;
     }
-
     h3 {
         @include section-h3;
-
         &.resume-section__position {
             text-align: left;
             margin-bottom: 20px;
@@ -45,22 +45,31 @@
 
 .resume-section__row {
     @extend .section-row;
+    @include mobile {
+        flex-direction: column;
+        h2 {
+            margin-bottom: 40px;
+        }
+    }
 }
 
 .resume-section__row--education {
     @extend .resume-section__row;
     margin-bottom: 30px;
-
+    @include mobile {
+        margin-bottom: 0;
+    }
     .resume-section__position {
         margin-bottom: 0;
     }
-
     p {
         margin-top: 10px;
     }
-
     div {
         margin-bottom: 20px;
+        @include mobile {
+            margin-bottom: 0;
+        }
     }
 }
 

@@ -1,11 +1,11 @@
 @import "colors";
 @import "fonts";
 @import "base";
+@import "style_overrides";
 @import "resume";
 @import "projects";
 @import "post";
 @import "spacer";
-@import "home_overrides";
 
 *,
 *:after,
@@ -376,9 +376,14 @@ img {
 
 .centered {
     display: flex;
-    height: 100vh;
+    min-height: 100vh;
     align-items: center;
     justify-content: center;
+
+    @include mobile {
+        padding: 80px 0;
+    }
+
     .about {
         text-align: center;
         h1 {
