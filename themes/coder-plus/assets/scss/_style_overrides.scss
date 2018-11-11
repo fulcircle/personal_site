@@ -70,7 +70,7 @@ h2.home__info {
 
 }
 
-.container {
+.content, .container {
     min-width: 960px;
 
     @include mobile {
