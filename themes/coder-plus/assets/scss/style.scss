@@ -37,10 +37,6 @@ a {
     font-weight: 700;
     color: $darker-fg-color;
     text-decoration: none;
-    &:focus,
-    &:hover {
-        text-decoration: underline;
-    }
 }
 
 p {
@@ -50,8 +46,7 @@ p {
         color: $darker-fg-color;
         text-decoration: underline;
         text-underline-position: under;
-        &:focus,
-        &:hover {
+        &:focus {
             color: $link-color;
         }
     }
@@ -481,15 +476,6 @@ a:before {
 
 a:after {
     right: 50%;
-}
-
-a:hover {
-    text-decoration: none;
-}
-
-a:hover:before,
-a:hover:after {
-    width: 50%;
 }
 
 .private {

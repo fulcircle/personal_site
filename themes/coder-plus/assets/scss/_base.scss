@@ -29,11 +29,11 @@
         padding: 96px 30px 25px 30px;
     }
 
-    a:hover, a:visited {
+    a:visited {
         color: inherit;
     }
 
-    a, a:hover {
+    a {
         text-decoration: underline;
         text-underline-position: under;
         transition: none;
@@ -59,11 +59,11 @@
 }
 
 @mixin section-a {
-    a:hover, a:visited {
+    a:visited {
         color: inherit;
     }
 
-    a, a:hover {
+    a {
         text-decoration: underline;
         text-underline-position: under;
         transition: none;
