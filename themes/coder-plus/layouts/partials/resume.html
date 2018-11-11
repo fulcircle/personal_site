@@ -38,7 +38,8 @@
                 <h3 class="resume-section__position">{{ .role }}</h3>
                 <div class="resume-section__company"><a target="_blank" href="{{ .company_link }}">{{ .company }}</a>
                     <div style="margin-bottom: 8px" class="show-mobile"></div>
-                    <div style="line-height: 26px">{{ .location }}, {{ .date_from }} - {{ .date_to }}</div>
+                    <div class="show-mobile" style="line-height: 26px">{{ .location }}, {{ .date_from }} - {{ .date_to }}</div>
+                    <span class="hide-mobile">{{ .location }}, {{ .date_from }} - {{ .date_to }}</span>
                 </div>
                 <p class="resume-section__blurb">{{ .description }}</p>
             </div>
