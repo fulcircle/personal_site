@@ -21,6 +21,7 @@ disqusShortname = "yourdiscussshortname" # Enable or disable Disqus.
     avatarurl = "images/avatar-bw.png" # Contain the path of the optionnal avatar in the static folder.
 
     headerContent = false
+    headerBlogContent = true
     footercontent = "" # Add footer content
     fixedbarContent = "" # Add fixedbar content
     fixedbarContentAfter = "" # Add fixedbar content after click
@@ -48,6 +49,11 @@ disqusShortname = "yourdiscussshortname" # Enable or disable Disqus.
     showprojects = true
 
 # Menu links
+[[menu.main]]
+    name = "About"
+    weight = 1
+    url  = ""
+
 [[menu.main]]
     name = "Posts"
     weight = 1

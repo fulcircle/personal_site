@@ -83,7 +83,7 @@ $(document).ready(function(){
 
   <body class="{{ if .Site.Params.rtl }}rtl{{ end }}">
     <main class="wrapper">
-      {{ if (.Site.Params.headerContent)}}
+      {{ if or (.Site.Params.headerContent) (and (.Site.Params.headerBlogContent) (eq .Section "posts"))}}
         {{ partial "header.html" . }}
       {{ end }}
       <div class="content">
