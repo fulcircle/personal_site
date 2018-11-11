@@ -1,4 +1,4 @@
-baseurl = "http://www.fulcircle.io" # Hostname (and path) to the root.
+baseurl = "https://www.fulcircle.io" # Hostname (and path) to the root.
 title = "Vik Sunkavalli" # Site title.
 theme = "coder-plus" # Set the theme.
 languagecode = "en" # The site’s language code used to generate RSS.
