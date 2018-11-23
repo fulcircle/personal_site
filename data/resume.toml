@@ -45,7 +45,7 @@ company_link = "https://www.sailthru.com"
 location = "New York, NY"
 date_from = "December 2013"
 date_to = "December 2014"
-description = "Responsible for rewroting Sailthru’s data access layer, which allowed Sailthru to scale its MongoDB database past 500 million documents. Developed a fast, efficient and parallelizable document update system in PHP to update 500 million Mongo documents as a prerequisite for rolling out new key features."
+description = "Responsible for rewriting Sailthru’s data access layer, which allowed Sailthru to scale its MongoDB database past 500 million documents. Developed a fast, efficient and parallelizable document update system in PHP to update 500 million Mongo documents as a prerequisite for rolling out new key features."
 
 [[work_experience]]
 role = "Senior Automation Engineer"
