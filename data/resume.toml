@@ -1,6 +1,7 @@
 technologies_proficient = [
     "Python / Django",
     "Javascript",
+    "React",
     "SCSS / CSS",
     "Responsive Design",
     "Test Automation / Selenium",
@@ -13,7 +14,6 @@ technologies_proficient = [
 
 technologies_experienced = [
     "Rails",
-    "React",
     "Flask",
     "Angularjs",
     "Java",
