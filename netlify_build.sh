@@ -13,5 +13,6 @@ rm -fr *.deb
 
 npm install postcss-cli autoprefixer
 LD_LIBRARY_PATH=$(pwd)/tmp/usr/lib/x86_64-linux-gnu $(pwd)/tmp/usr/local/bin/hugo
+cp _redirects public/
 
 exit 0
