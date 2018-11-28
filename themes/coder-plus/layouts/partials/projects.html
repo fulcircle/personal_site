@@ -3,14 +3,16 @@
         <div class="projects__row">
             <h1>Projects</h1>
         </div>
+        {{ range .projects}}
         <div class="projects__row">
-            <div class="project__image"><a target="_blank" href="https://doberman.projects.fulcircle.io/"><img src="/images/doberman.png" /></a></div>
+            <div class="project__image"><a target="_blank" href="{{ .url }}"><img src="{{ .image }}" /></a></div>
             <div class="project__description">
                 <div class="project__description-inner">
-                    <h3><a target="_blank" href="https://cutter-display-81723.netlify.com/">Doberman Front Page</a></h3>
-                    <p>Speedy, fully-responsive, pixel-perfect home page for Doberman Design.</p>
+                    <h3><a target="_blank" href="{{ .url }}">{{ .title }}</a></h3>
+                    <p>{{ .description }}</p>
                 </div>
             </div>
         </div>
+        {{ end }}
     </div>
 </div>

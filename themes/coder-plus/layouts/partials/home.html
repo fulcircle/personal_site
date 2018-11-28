@@ -35,7 +35,7 @@
   </section>
   {{ if .Site.Params.showprojects }}
   <section id="projects" class="projects-container">
-    {{ partial "projects.html" }}
+    {{ partial "projects.html" .Site.Data.projects}}
   </section>
   {{ end }}
 </div>
