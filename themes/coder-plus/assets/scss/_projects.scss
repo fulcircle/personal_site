@@ -48,9 +48,14 @@
 }
 
 .project__image {
+
     @include mobile {
         margin-bottom: 20px;
     }
+}
+
+.project__image-tag {
+    box-shadow: 3px 9px 25px #cacaca;
 }
 
 .project__description-inner {
