@@ -2,6 +2,7 @@
 title: "Why I Love Hugo"
 date: 2018-11-10T09:53:26-05:00
 draft: false
+categories: [Technical, Web Development]
 ---
 I've tried a few static site generators in the past, but I think [Hugo](https://gohugo.io) has been the most pleasant experience I've had with one to date.  One of the biggest strengths of Hugo is that it's **fast**.  Being written in Go obviously has its advantages.  
 
