@@ -3,7 +3,7 @@
 #### Built with Hugo
 
 
-### Requirements: 
+### Requirements 
 ---
 1. [Hugo Extended](https://gohugo.io/getting-started/installing/)
 
