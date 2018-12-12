@@ -72,7 +72,7 @@ Performance benchmarks do in fact bear these conclusions out:
 
 <img src="/images/posts/nginx-vs-apache/nginx-vs-apache-memory.png" alt="NGINX vs. Apache: Memory" />
 
-<img src="/images/posts/nginx-vs-apache/nginx-vs-apache-rps.png" alt="NGINX vs. Apache: Requests per Second" width="715" height="435"/>
+<img src="/images/posts/nginx-vs-apache/nginx-vs-apache-rps.png" alt="NGINX vs. Apache: Requests per Second" width="715"/>
 
 ([Source](https://help.dreamhost.com/hc/en-us/articles/215945987-Web-server-performance-comparison))
 
