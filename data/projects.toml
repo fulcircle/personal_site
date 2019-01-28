@@ -8,7 +8,7 @@ description = "A minimal news aggregator.  Created with Django and React."
 url = "https://datagib.fulcircle.io"
 image = "/images/datagib.png"
 title = "Datagib"
-description = "Search Github commits using plain english"
+description = "Search for Github commits using plain English."
 
 [[projects]]
 url = "https://doberman.fulcircle.io"
