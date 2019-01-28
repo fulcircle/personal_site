@@ -5,6 +5,12 @@ title = "Topper News Aggregator"
 description = "A minimal news aggregator.  Created with Django and React."
 
 [[projects]]
+url = "https://datagib.fulcircle.io"
+image = "/images/datagib.png"
+title = "Datagib"
+description = "Search Github commits using plain english"
+
+[[projects]]
 url = "https://doberman.fulcircle.io"
 image = "/images/doberman.png"
 title = "Doberman Front Page"
