@@ -123,9 +123,6 @@ pre {
 
 code {
     display: inline-block;
-    background-color: $darker-fg-color;
-    color: $bg-color;
-    padding: 0.4rem 0.8rem 0.4rem 0.8rem;
 }
 
 blockquote {
@@ -531,10 +528,6 @@ a:after {
     align-items: center;
     position: relative;
     height: 65px;
-}
-
-code {
-    background: #364549 !important;
 }
 
 .sns-shares {
