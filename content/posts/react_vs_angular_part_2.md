@@ -47,7 +47,7 @@ As I mentioned, the `ChangeDetectorRef` is the central class responsible for det
 
 function onBrowserEvent() {
     for each node in DOM:
-        node.changeDetectorRef.updateNode();
+        node.changeDetectorRef.detectChanges();
 }
 
 // This class gets instantiated for every component 
@@ -69,7 +69,7 @@ class ChangeDetectorRef {
     }
 
     // This function gets called by Angular on every browser event
-    updateNode() {
+    detectChanges() {
             
         // get the existing bound value
         const oldValue = this.boundValue;
