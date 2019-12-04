@@ -1,7 +1,4 @@
 {
-  "scripts": {
-    "netlify-build": "NF_IMAGE_VERSION=1 bash ./netlify_build.sh && LD_LIBRARY_PATH=$(pwd)/tmp/usr/lib/x86_64-linux-gnu $(pwd)/tmp/usr/local/bin/hugo"
-  },
   "dependencies": {
     "autoprefixer": "^9.4.6",
     "postcss-cli": "^6.1.1"
