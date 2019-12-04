@@ -46,7 +46,7 @@ disqusShortname = "fulcircle" # Enable or disable Disqus.
     # Multilanguage mode
     langseparator = "|" # Separates menus from language selectors when site is multilingual.
 
-    showprojects = true
+    showprojects = false
 
 # Menu links
 [[menu.main]]
